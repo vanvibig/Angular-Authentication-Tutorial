@@ -42,4 +42,79 @@ router.post('/login', (req, res) => {
     });
 });
 
+router.get('/events', (req, res) => {
+    let events = [
+        {
+            "_id": 1,
+            "name": "Auto Expo",
+            "description": "Lorem ipsum",
+            "date": "2018-05-22"
+        },{
+            "_id": 2,
+            "name": "Auto Expo",
+            "description": "Lorem ipsum",
+            "date": "2018-05-22"
+        },{
+            "_id": 3,
+            "name": "Auto Expo",
+            "description": "Lorem ipsum",
+            "date": "2018-05-22"
+        },{
+            "_id": 4,
+            "name": "Auto Expo",
+            "description": "Lorem ipsum",
+            "date": "2018-05-22"
+        },{
+            "_id": 5,
+            "name": "Auto Expo",
+            "description": "Lorem ipsum",
+            "date": "2018-05-22"
+        },{
+            "_id": 6,
+            "name": "Auto Expo",
+            "description": "Lorem ipsum",
+            "date": "2018-05-22"
+        }
+    ];
+    res.json(events);
+});
+
+router.get('/special', (req, res) => {
+    let events = [
+        {
+            "_id": 1,
+            "name": "Auto Expo",
+            "description": "Lorem ipsum",
+            "date": "2018-05-22"
+        },{
+            "_id": 2,
+            "name": "Auto Expo",
+            "description": "Lorem ipsum",
+            "date": "2018-05-22"
+        },{
+            "_id": 3,
+            "name": "Auto Expo",
+            "description": "Lorem ipsum",
+            "date": "2018-05-22"
+        },{
+            "_id": 4,
+            "name": "Auto Expo",
+            "description": "Lorem ipsum",
+            "date": "2018-05-22"
+        },{
+            "_id": 5,
+            "name": "Auto Expo",
+            "description": "Lorem ipsum",
+            "date": "2018-05-22"
+        },{
+            "_id": 6,
+            "name": "Auto Expo",
+            "description": "Lorem ipsum",
+            "date": "2018-05-22"
+        }
+    ];
+    res.json(events);
+});
+
+
 module.exports = router;
