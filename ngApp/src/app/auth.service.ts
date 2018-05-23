@@ -18,7 +18,12 @@ export class AuthService {
     return this.http.post<any>(this._loginUrl, user);
   }
 
-
+  loggedIn(){
+    /**
+     * !! is return true if * exist, else return false
+     */
+    return !!localStorage.getItem('token');
+  }
 
 
 }
